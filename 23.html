@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        获取邮箱、电话、网址
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+</head>
+
+<body>
+    <!-- 限制数字输入 -->
+    <label>数字输入：<input type="number" name="age" min="1" max="99" step="1"></label>
+    <br><br>
+    <!-- 实现数字滚动条 -->
+    <label>数字滚动：<input type="range" name="love" value="1" min="1" max="10" step="1"></label>
+    <br><br>
+    <!-- input获取邮箱、电话和网址 -->
+    <label>邮箱：<input type="email" name="email" placeholder="仅限126or163" required></label>
+    <label>电话：<input type="tel" name="tel" maxsize="22"></label>
+    <label>网址：<input type="url" name="url" size="30" list="urllist"></label>
+    <datalist id="urllist">
+        <option value="www.baidu.com">百度主页</option>
+    </datalist>
+</body>
+
+</html>
