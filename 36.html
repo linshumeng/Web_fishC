@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        UI伪类选择器
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        :enabled {
+            outline: 1px solid green;
+        }
+
+        :disabled {
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <p>
+            <label for="enabled">可用：</label>
+            <input type="text" name="enabled">
+        </p>
+        <p>
+            <label for="disabled">禁用：</label>
+            <input type="text" name="disabled" disabled>
+        </p>
+        <button>可用按钮</button>
+        <button disabled>禁用按钮：</button>
+    </form>
+</body>
+
+</html>
