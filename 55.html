@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        z-index
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        .pink {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .lightblue {
+            width: 200px;
+            height: 100px;
+            position: sticky;
+            z-index: -1;
+            bottom: 50%;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pink"></div>
+    <div class="lightblue"></div>
+    <div class="pink"></div>
+    <div class="lightblue"></div>
+    <div class="pink"></div>
+    <div class="lightblue"></div>
+    <div class="pink"></div>
+    <div class="lightblue"></div>
+</body>
+
+</html>
