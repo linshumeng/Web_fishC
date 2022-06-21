@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        BFC
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        .container {
+            background-color: pink;
+            overflow: hidden;
+        }
+
+        .newBFC {
+            overflow: hidden;
+        }
+
+        p {
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>文字</p>
+        <div class="newBFC">
+            <p>文字</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
