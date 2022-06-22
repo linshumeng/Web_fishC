@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        弹性盒布局
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: pink;
+        }
+
+        .inline-flex-container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            background-color: pink;
+        }
+
+        .flex-container>div,
+        .inline-flex-container>div {
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+
+    </div>
+    <hr>
+    <div class="inline-flex-container">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+
+    </div>
+
+
+</body>
+
+</html>
