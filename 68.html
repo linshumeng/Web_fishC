@@ -4,7 +4,7 @@
 <head>
 
     <title>
-        关键词和函数
+        栅格区域和间距
     </title>
 
     <meta charset="utf-8">
@@ -13,32 +13,60 @@
     <meta name="description" content="web开发">
     <meta name="author" content="我">
     <style type="text/css">
-        .grid-container {
-            display: grid;
-            padding: 10px;
-            background-color: lightblue;
-            /* grid-template-columns: min-content max-content max-content; */
-            /* grid-template-columns: repeat(6, 100px); */
-            grid-template-columns: repeat(3, 200px) repeat(3, 100px);
+        .item1 {
+            grid-area: header;
         }
 
-        .grid-container>div {
-            text-align: center;
+        .item2 {
+            grid-area: nav;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: aside;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'nav ... main main aside aside'
+                'nav footer footer footer footer footer';
+            /* 用名称组合的形状调整布局的形状 */
+            grid-gap: 10px;
+            background-color: lightblue;
             padding: 10px;
-            border: 1px solid white;
+        }
+
+        .grid-container>* {
             background-color: pink;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
         }
     </style>
 </head>
 
 <body>
     <div class="grid-container">
-        <div>xxxxx</div>
-        <div>xxxxx</div>
-        <div>xxxxx</div>
-        <div>xxxxx</div>
-        <div>xxxxx</div>
-        <div>xxxxx</div>
+        <header class="item1">Header</header>
+        <nav class="item2">Nav</nav>
+        <main class="item3">
+            <section>Section 1</section>
+            <section>Section 2</section>
+            <section>Section 3</section>
+            <section>Section 4</section>
+            <section>Section 5</section>
+        </main>
+        <aside class="item4">Aside</aside>
+        <footer class="item5">Footer</footer>
     </div>
 </body>
 
