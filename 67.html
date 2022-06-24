@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        栅格布局基础
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: nav;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: aside;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'nav main main main aside aside'
+                'nav footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        .grid-container>* {
+            background-color: pink;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="item1">Header</header>
+        <nav class="item2">Nav</nav>
+        <main class="item3">
+            <section>Section 1</section>
+            <section>Section 2</section>
+            <section>Section 3</section>
+            <section>Section 4</section>
+            <section>Section 5</section>
+        </main>
+        <aside class="item4">Aside</aside>
+        <footer class="item5">footer</footer>
+    </div>
+</body>
+
+</html>

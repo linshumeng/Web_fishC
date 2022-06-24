@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        栅格元素放置规则
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            grid-auto-flow: row;
+        }
+
+        .grid-container>div {
+            font-size: 2em;
+            text-align: center;
+            height: 100px;
+            line-height: 100px;
+            border: 1px solid white;
+        }
+
+        .item1 {
+            background-color: red;
+        }
+
+        .item2 {
+            background-color: red;
+        }
+
+        .item3 {
+            background-color: red;
+        }
+
+        .item4 {
+            background-color: red;
+        }
+
+        .item5 {
+            background-color: red;
+        }
+
+        .item6 {
+            background-color: red;
+        }
+
+        .item7 {
+            background-color: red;
+        }
+
+        .item8 {
+            background-color: red;
+        }
+
+        .item9 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+</body>
+
+</html>
