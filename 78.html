@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        变形原点
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            transition: 2s;
+            color: white;
+            background-color: lightblue;
+        }
+
+        .length {
+            transform-origin: 50px 150px;
+        }
+
+        .percent {
+            transform-origin: 80% 80%;
+        }
+
+        .length:hover {
+            background-color: pink;
+            transform: rotate(45deg);
+        }
+
+        .percent:hover {
+            background-color: pink;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="length">以(50px, 150px)为原点</div>
+    <div class="percent">以(80%, 80%)为原点</div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>
+        变形
+    </title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta name="keywords" content="web开发 HTML5 CSS3">
+    <meta name="description" content="web开发">
+    <meta name="author" content="我">
+    <style type="text/css">
+        div {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            transition: 2s;
+            color: white;
+            background-color: lightblue;
+        }
+
+        .rotate_l:hover {
+            background-color: pink;
+            transition: 2s;
+            transform: rotate(-1800deg);
+        }
+
+        .rotate_r:hover {
+            background-color: pink;
+            transition: 2s;
+            transform: rotate(1800deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate_l">向左旋转</div>
+    <div class="rotate_r">向右旋转</div>
+
+</body>
+
+</html>
